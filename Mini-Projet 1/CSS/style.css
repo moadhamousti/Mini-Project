@@ -1,0 +1,235 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root {
+    --header-height: 1.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(219, 69%, 56%);
+    --first-color-alt: hsl(219, 69%, 52%);
+    --title-color: hsl(219, 8%, 95%);
+    --text-color: hsl(0, 0%, 0%);
+    --text-color-light: hsl(219, 4%, 55%);
+    --white-color: rgb(226, 174, 174);
+    --body-color: rgb(219,219,219);
+    --container-color: hsl(209, 31%, 65%);
+    --body-font: 'Roboto Mono', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+  
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    background: radial-gradient(circle, rgba(219,219,219,1) 0%, rgba(65,143,235,1) 100%);
+
+}
+  
+  
+ul{
+    list-style: none;
+    font-size: larger;
+}
+  
+.logo{
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+  }
+  
+  .nav {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    background-color: rgb(255, 255, 255);
+    height: calc(var(--header-height) + 3.5rem);
+  }
+  .nav__menu, .logo {
+    display: inline-block;
+    position: relative;
+  }
+
+  main {
+    margin-top: 80px; /* Set the top margin to the height of the navbar */
+  }
+  
+  .nav__logo,
+  .nav__toggle{
+    color: var(--header-height);
+    display: inline-flex;
+  }
+
+  .cities-container {
+    display: flex;
+    margin: 5px;
+    margin-left: 290px;
+    padding-bottom: 50px;
+  }
+
+  .logo-page{
+      width:100px;
+      height:90px;
+      border: 2px;
+  }
+.slider{
+    position: inherit;
+}
+
+  .photo-slider{
+      width: 1000px;
+      height: 500px;
+      margin-left: 210px;
+      left: 210px;
+      border: solid 2px black;
+  }
+
+  .nav__menu{
+        position: relative;
+        left: 400px;
+        top: 35px;
+        width: 960px;
+        height: calc(var(--header-height) + 2.5rem);
+        display: flex;
+  }
+
+  section img {
+    margin-left: 7px;
+    width: 180px; 
+    height: 140px;
+    border-radius: 10%;
+  }
+  
+  section {
+    width: 10%;
+    margin-bottom: 50px;
+  }
+
+  
+
+#aga , #ess, #tan, #mar{
+    width: 200px;
+    border:solid #EF4836;
+    border-radius: 4%;
+    
+}
+
+section{
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  
+  .nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav__item {
+    margin-left: 5rem;
+    margin-bottom: 5px;
+  }
+
+  .Big-Title {
+    font-size: 6rem; 
+    font-weight: 900; 
+    letter-spacing: 0.1em; 
+    line-height: 1.2;
+    text-align: center; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.link-visit {
+    display: block; 
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 7px;
+    size: 10px;
+  }
+
+  .link-visit:hover{
+      color: rgb(246, 203, 8);
+  }
+
+  .icons:hover{
+    color: rgb(246, 203, 8);
+  }
+
+  .icons {
+    font-size: 24px; 
+    margin: 0 10px;
+  }
+
+h4{
+    padding-left: 5px;
+}
+
+
+  
+  
