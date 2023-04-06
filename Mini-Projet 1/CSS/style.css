@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 
 :root {
@@ -24,6 +25,8 @@
     --smaller-font-size: .75rem;
 }
 
+/* ================= General Settings ================= */
+
 
 *{
     box-sizing: border-box;
@@ -46,70 +49,57 @@ ul{
     list-style: none;
     font-size: larger;
 }
-  
-.logo{
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-
-
-
 
 img{
     max-width: 100%;
     height: auto;
 }
 
-.header{
-    width: 100%;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-  }
-  
-  .nav {
-    height: 90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000; 
-    background-color: rgb(255, 255, 255);
-    height: calc(var(--header-height) + 3.5rem);
-  }
-  .nav__menu, .logo {
-    display: inline-block;
-    position: relative;
-  }
+h1{
+  font-family: 'Josefin Sans', sans-serif;
+}
 
-  main {
-    margin-top: 80px; /* Set the top margin to the height of the navbar */
-  }
+
+section{
+  align-items: center;
+}
+
+/* ================= Main ============== */
+
+main {
+  margin-top: 80px; /* Set the top margin to the height of the navbar */
+}
+
+/* ========================================== */
+
+
+
+/* ================== Header =================== */
+
+
+
+.header{
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
   
-  .nav__logo,
-  .nav__toggle{
-    color: var(--header-height);
-    display: inline-flex;
-  }
 
   .cities-container {
     display: flex;
     margin: 5px;
     margin-left: 290px;
     padding-bottom: 50px;
+    flex-direction: row;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
   }
 
-  .logo-page{
-      width:100px;
-      height:90px;
-      border: 2px;
-  }
-.slider{
-    position: inherit;
-}
+
+
 
   .photo-slider{
       width: 1000px;
@@ -119,14 +109,6 @@ img{
       border: solid 2px black;
   }
 
-  .nav__menu{
-        position: relative;
-        left: 400px;
-        top: 35px;
-        width: 960px;
-        height: calc(var(--header-height) + 2.5rem);
-        display: flex;
-  }
 
   section img {
     margin-left: 7px;
@@ -144,39 +126,35 @@ img{
 
 #aga , #ess, #tan, #mar{
     width: 200px;
-    border:solid #EF4836;
+    border:solid #ff6655;
     border-radius: 4%;
     
 }
 
-section{
-    align-items: center;
-}
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
+
+
+
+/* ==================== Slider ================== */
+
+
+/* The slider Conatainer  */
+ 
+.slider{
+  position: inherit;
+  display: flex;
+  height: 500px;
+  width: 1350px;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
   
-  .nav__logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-right: auto;
-  }
+
+/* ==================== Slider Title ================== */
   
-  
-  .nav__list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .nav__item {
-    margin-left: 5rem;
-    margin-bottom: 5px;
-  }
+
 
   .Big-Title {
     font-size: 6rem; 
@@ -191,45 +169,166 @@ section{
     z-index: 2;
     color: white;
   }
-  
-  .nav__link {
-    text-decoration: none;
-    color: black;
-  }
 
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+
+
+
+  
+
+
+
+/* FOOTER Container : */
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 .link-visit {
-    display: block; 
-    width: fit-content;
-    margin: 0 auto;
-    padding-bottom: 7px;
-    size: 10px;
-  }
+  display: block; 
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 7px;
+  size: 10px;
+}
 
-  .link-visit:hover{
-      color: rgb(246, 203, 8);
-  }
-
-  .icons:hover{
+.link-visit:hover{
     color: rgb(246, 203, 8);
-  }
+}
 
-  .icons {
-    font-size: 24px; 
-    margin: 0 10px;
-  }
+.icons:hover{
+  color: rgb(246, 203, 8);
+}
+
+.icons {
+  font-size: 24px; 
+  margin: 0 10px;
+}
 
 h4{
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* Menu Container  */
+
+.nav__list{
+  position: relative;
+  left: 400px;
+  top: 35px;
+  width: 500px;
+  height: 60px;
+  display: flex;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__item {
+  margin-right: 20px;
+}
+
+.n_1,
+.n_2,
+.n_3{
+  color: white;
+}
+
+.n_1{
+  width: 10px;
+  height: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+.n_2{
+  width: 10px;
+  height: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+.n_3{
+  width: 10px;
+  height: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+}
+
+/* nav items hover:  */
+
+.n_3:hover {
+  background-color: yellow;
+  color: white;
+}
+.n_1:hover {
+  background-color: yellow;
+  color: white;
+}
+.n_2:hover {
+  background-color: yellow;
+  color: white;
+}
+
+
+
+/* ================ LOGO ===================== */
+
+
+/* Logo Flex Box  */
+
+.logo-page{
+  width:100px;
+  height:90px;
+}
+
+/* Logo Container  */
+
+.nav_container{
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    background-color: rgb(255, 255, 255);
+    height: calc(var(--header-height) + 3.5rem);
+    flex-direction: row;
+}
+
+/* Logo Container : */
+  
+.logo{
+  text-decoration: none;
+  margin-left: 20px;
+  display: flex;
+  height: 90px;
+  width: 100px;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+}
+
+  
+  
   
   
